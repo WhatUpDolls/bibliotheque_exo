@@ -13,16 +13,14 @@ public class Main {
         System.out.println("Bienvenue sur la bibliothèque. Que souhaitez-vous faire ?");
         System.out.print("Créer un livre : 1, Créer un membre : 2");
 
-        String cat = String.valueOf(Categories.COMEDIE);
         System.out.print("Choisir une catégorie : "+ Arrays.toString(Categories.values()));
         String action;
         String input1 = input.nextLine();
         System.out.println(input1);
-        input1 = null;
         System.out.println("1".equals(input1));
 
-        if (Objects.equals(input1, "1") || Objects.equals(input1, "Livre")) {
-            action = "Livre";
+        if ("1".equals(input1) || Objects.equals(input1, "Livre")) {
+            // action = "Livre";
             System.out.println("Quel est son titre ?");
             String titre = input.nextLine();
             System.out.println("Quel est son auteur ?");
