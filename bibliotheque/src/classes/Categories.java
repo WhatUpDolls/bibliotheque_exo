@@ -1,5 +1,5 @@
 package classes;
 
 public enum Categories {
-    POLICIER, DRAME, COMEDIE
+    FICTION, NON_FICTION, SCIENTIFIQUE, HISTOIRE, BIOGRAPHIE
 }
